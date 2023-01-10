@@ -49,9 +49,3 @@ GAT=True
 network_verNum=4039
 graph_num=1000
 Nodes_total_NUM = 4039* 1000
-
-# 服务器文件夹
-# /home/zhaobin/anaconda3/envs/GCNSI/bin/python 服务器解释器地址
-
-# C:/Users/hdp/Desktop/files/py/mypy/pygcn-master 本地同步文件夹
-# /home/zhaobin/HDP/code_PYGCN 服务器同步文件夹
