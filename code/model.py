@@ -1,4 +1,3 @@
-# todo: 1、lipthiz系数更新矩阵W  2、使用\hat{A}并加入S相似性矩阵
 import numpy as np
 import torch.nn as nn
 import torch
