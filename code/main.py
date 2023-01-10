@@ -1,5 +1,3 @@
-## Graph Neural Point Process for Temporal Interaction Prediction TKDE
-
 import math
 import sys
 import time
@@ -308,10 +306,6 @@ def train(train_loader):
             pred = torch.zeros(B, args.pick_T_num, args.network_verNum, 2).to(args.device)
 
         for v_index in range(args.network_verNum):    # 学习每个节点的二分类特征属性
-#todo: 在这里加入一个维度，这个维度的扩充由学习到的矩阵来扩充
-#   1、扩充两个维度：上一时间步的0和1
-#   2、扩充四个维度：当前图的0和1 + 上一时间步的0和1
-#   3、往前增加一个时间步
 #             output_one_node, _ = GRU_model(torch.concat( (output[:, :, v_index, :], data[3][:, :, v_index, [202] ]), dim=2))
             output_one_node, _ = GRU_model( torch.concat(
                 (torch.concat(
