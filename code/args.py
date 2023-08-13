@@ -15,7 +15,7 @@ output_GCN=1
 output_GRU=2
 
 
-nhead=8
+nhead=2
 filter_scale=1
 n_hidden=0
 n_hidden_edge=16
